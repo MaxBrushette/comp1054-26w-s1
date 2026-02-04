@@ -13,23 +13,32 @@ to match as closely as you can with the colors
 on the FIRST paint swatch card provided.
 -------------------------------------------------- */
 	#hex div:nth-of-type(1) {
-		background-color: red;
+		background-color: #025150;
 	}
 	#hex div:nth-of-type(2) {
-		background-color: orange;
+		background-color: #1b6274;
 	}
 	#hex div:nth-of-type(3) {
-		background-color: yellow;
+		background-color: #09565a;
 	}
 	#hex div:nth-of-type(4) {
-		background-color: limegreen;
+		background-color: #04232e;
 	}
 /* STEP 2: Set each color in rgba format
 to match as closely as you can with the colors
 on the SECOND paint swatch card provided.
 -------------------------------------------------- */
 	#rgba div:nth-of-type(1) {
-		background-color: red;
+		background-color: rgba(238, 192, 100, 0.811);
+	}
+	#rgba div:nth-of-type(2){
+		background-color: rgba(236, 184, 55, 0.895);
+	}
+	#rgba div:nth-of-type(3){
+		background-color: rgba(237, 170, 25);
+	}
+	#rgba div:nth-of-type(4){
+		background-color: rgba(255, 128, 0);
 	}
 	/* ...and so on... */
 
@@ -38,7 +47,16 @@ to match as closely as you can with the colors
 on the THIRD paint swatch card provided.
 -------------------------------------------------- */
 	#hsla div:nth-of-type(1) {
-		background-color: red;
+		background-color: hsl(104, 49%, 29%);
+	}
+	#hsla div:nth-of-type(2){
+		background-color: hsl(104, 39%, 55%);
+	}
+	#hsla div:nth-of-type(3){
+		background-color: hsl(104, 36%, 61%);
+	}
+	#hsla div:nth-of-type(4){
+		background-color: hsl(96 66% 72% / 0.650);
 	}
 	/* ...and so on... */
 
@@ -50,7 +68,21 @@ produce an exact rendition of the swatch colors on the FOURTH card provided.
 (https://developer.mozilla.org/en-US/docs/Web/CSS/filter).
 -------------------------------------------------- */
 	#keyword div:nth-of-type(1) {
-		background-color: red;
+		background-color: plum;
+		filter: grayscale(.1) contrast(.9) opacity(.5);
+	}
+	#keyword div:nth-of-type(2){
+		background-color:lavenderblush;
+		filter: saturate(9) grayscale(.4) opacity(.6);
+
+	}
+	#keyword div:nth-of-type(3){
+		background-color: mediumpurple;
+		filter: opacity(.5);
+	}
+	#keyword div:nth-of-type(4){
+		background-color:rebeccapurple;
+		filter: opacity(.6) saturate(.9);
 	}
 	/* ...and so on... */
 
@@ -66,61 +98,61 @@ produce an exact rendition of the swatch colors on the FOURTH card provided.
 		<section id="hex">
 			<h2>Hexadecimal</h2>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Port of Victoria</h3>
 			</div>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Pool Party</h3>
 			</div>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Blue Lagoon</h3>
 			</div>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Butterfly Wing</h3>
 			</div>
 		</section>
 		<section id="rgba">
 			<h2>RGB(A)</h2>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Lace Corsage</h3>
 			</div>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Salmonberry</h3>
 			</div>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Orange Cantaloupe</h3>
 			</div>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Tangerine Fizz</h3>
 			</div>
 		</section>
 		<section id="hsla">
 			<h2>HSL(A)</h2>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Splendor</h3>
 			</div>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Summer Picnic</h3>
 			</div>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Green Tea</h3>
 			</div>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Sea Scent</h3>
 			</div>
 		</section>
 		<section id="keyword">
 			<h2>Keyword / CSS Filter</h2>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Cornflower Sky</h3>
 			</div>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Bella Blue</h3>
 			</div>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Nearly Twilight</h3>
 			</div>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Summer Dusk</h3>
 			</div>
 		</section>
 	</main>
