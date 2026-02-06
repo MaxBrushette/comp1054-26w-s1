@@ -51,15 +51,20 @@ main section p{
     margin-bottom:0;
 }
 main aside {
-    border: 5px solid purple;
+    border-left: 2px solid black;
     flex-basis: 40%;
 }
 footer{
-    border: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
     display: flex;
     width:80%;
     margin: 0 auto;
     background:blue;
+}
+footer h1{
+    margin:0;
 }
 .cabin-sketch-regular {
   font-family: "Cabin Sketch", sans-serif;
