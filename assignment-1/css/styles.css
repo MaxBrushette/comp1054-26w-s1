@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing:inherit;
+}
+html, body{
+    height:100%;
+    margin:0;
+}
+body{
+    font-family:"Cabin Sketch";
+    background-image: url("../img/Field.jpg");
+    background-size: cover;
+}
+header{
+    background-image: url("../img/Tigerstripes.jpg");
+    text-align:center;
+    color:white;
+}
+header h1{
+    font-family:"Londrina Sketch";
+    margin-bottom:0;
+}
+header p {
+    margin-top:0;
+}
+main{
+    border: 2px solid black;
+    background-image: url("../img/Paper.jpg");
+    width:80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+main h1{
+    background:beige;
+    font-family:"Londrina Sketch";
+    margin-top:0;
+    margin-bottom:0;
+}
+main section{
+    flex-basis: 60%;
+}
+main section p{
+    margin-top:0;
+    margin-left:2px;
+    margin-bottom:0;
+}
+main aside {
+    border: 5px solid purple;
+    flex-basis: 40%;
+}
+footer{
+    border: 2px solid black;
+    display: flex;
+    width:80%;
+    margin: 0 auto;
+    background:blue;
+}
+.cabin-sketch-regular {
+  font-family: "Cabin Sketch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.londrina-sketch-regular {
+  font-family: "Londrina Sketch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}

@@ -1,0 +1,36 @@
+Select a song that is meaningful to you and obtain the official lyrics.
+Create a local code repository using Git (or add an "assignment-1" folder into your class files repository.
+Build a valid, well-structured HTML page for the song lyrics, along with a paragraph about the song and another regarding the artist or the band.
+Use appropriate sectioning elements to structure the page (like article, section, header, main, footer, aside) and other semantically-meaningful elements to mark up the content (like headings, paragraphs, lists, blockquotes, quotes, etc.). Do not add any classes or IDs to the HTML.
+Validate your HTML to be sure there are no errors at https://validator.w3.org/.
+Apply a CSS reset or normalization technique that also addresses box-sizing.
+Select two typefaces that would be suitable for the lyrics - one for the page headings, and another for the page body. Be sure to consider readability—display fonts are designed for headings, while other fonts were made for large blocks of text (called body copy). You may use a font-embedding service like Google Fonts if you wish.
+Use either CSS Flexbox or Grid (or a combination of both) to build a simple but effective layout for the page.
+Employ the typographic techniques learned in this class to style the text using the two typefaces that you have selected.
+Add some suitable colours and other design elements to the page, but consider legibility—make sure that the page is easy to read and that there are no contrast issues.
+Validate your CSS to be sure there are no errors at https://jigsaw.w3.org/css-validator/.
+Be sure to include regular Git commits describing each stage of your work from start to finish so that the development process is well-documented (this is important). Push all changes to a remote repository (like Github).
+Include some fine-print at the bottom of the page with links to any resources referenced in the creation of your assignment.
+No 3rd-party CSS themes or frameworks are permitted. All CSS and HTML must be your own work.
+Only use CSS and HTML techniques that we have learned in class - code beyond the scope of the course content may be subject to a code review. Ensure that all work submitted adheres to Georgian College's Academic Integrity policies and procedures, available at https://cat.georgiancollege.ca/academic-regulations/integrity/
+
+
+
+
+TAKE IT FURTHER 
+
+
+
+Apply some suitable or background-images to the page.
+Apply some interesting CSS-powered text-effects (for display type, not body copy).
+Anything else you can think of to make the page more fun.
+
+
+
+
+SUBMITTING YOUR WORK 
+
+
+
+Upload your completed page and all the supporting files to a Web server and provide the URL (you can enable Github Pages and provide the URL to your Project 1 page if you'd like).
+Provide the URL to your remote hosted code repository (like Github).
