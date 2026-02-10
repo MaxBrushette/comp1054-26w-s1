@@ -55,9 +55,6 @@ main aside {
     border-left: 2px solid black;
     flex-basis: 40%;
 }
-main aside section{
-    margin-left:2px;
-}
 main aside img{
     display:block;
     margin: 0 auto;
