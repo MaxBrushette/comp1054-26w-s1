@@ -11,7 +11,7 @@ html, body{
     margin:0;
 }
 body{
-    font-family:"Cabin Sketch";
+    font-family:"Cabin Sketch", Arial, sans-serif;
     background-image: url("../img/Field.jpg");
     background-size: cover;
 }
@@ -21,10 +21,11 @@ header{
     color:white;
 }
 header h1{
-    font-family:"Londrina Sketch";
+    font-family:"Arial Bold", sans-serif;
     margin-bottom:0;
 }
 header p {
+    font-family: "Arial";
     margin-top:0;
 }
 main{
@@ -38,7 +39,7 @@ main{
 }
 main h1{
     background:beige;
-    font-family:"Londrina Sketch";
+    font-family:"Londrina Sketch", Arial, sans-serif;
     margin-top:0;
     margin-bottom:0;
 }
@@ -54,17 +55,30 @@ main aside {
     border-left: 2px solid black;
     flex-basis: 40%;
 }
+main aside section{
+    margin-left:2px;
+}
+main aside img{
+    display:block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
 footer{
     border-left: 2px solid black;
     border-right: 2px solid black;
     border-bottom: 2px solid black;
-    display: flex;
     width:80%;
     margin: 0 auto;
-    background:blue;
+    background:beige;
 }
 footer h1{
+    font-family:"Londrina Sketch", Arial, sans-serif;
     margin:0;
+}
+footer ul{
+    margin-top:0;
+    list-style-type:none;
+    padding: 2px;
 }
 .cabin-sketch-regular {
   font-family: "Cabin Sketch", sans-serif;
@@ -72,7 +86,7 @@ footer h1{
   font-style: normal;
 }
 .londrina-sketch-regular {
-  font-family: "Londrina Sketch", sans-serif;
+  font-family: "Londrina Sketch", Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
