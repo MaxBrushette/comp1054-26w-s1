@@ -37,7 +37,7 @@ main{
     flex-direction: row;
     align-items: stretch;
 }
-main h1{
+main h2{
     background:beige;
     font-family:"Londrina Sketch", Arial, sans-serif;
     margin-top:0;
@@ -71,7 +71,7 @@ footer{
     margin: 0 auto;
     background:beige;
 }
-footer h1{
+footer h2{
     font-family:"Londrina Sketch", Arial, sans-serif;
     margin:0;
 }
