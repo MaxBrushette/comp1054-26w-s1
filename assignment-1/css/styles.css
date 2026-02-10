@@ -6,28 +6,34 @@ html{
 *, *::before, *::after{
     box-sizing:inherit;
 }
+/*So the background image doesn't mess up. This is the only way I was able to fix it with my knowledge. */
 html, body{
     height:100%;
     margin:0;
 }
+/*Giving the body the same font all across the board, and making the background the field so it matches the album cover for the most part. */
 body{
     font-family:"Cabin Sketch", Arial, sans-serif;
     background-image: url("../img/Field.jpg");
     background-size: cover;
 }
+/* Giving the header a background image to make it stand out, and aligning the text to the center so it looks nicer. */
 header{
     background-image: url("../img/Tigerstripes.jpg");
     text-align:center;
     color:white;
 }
+/* Making it bold to make it stand out, and the margin-bottom specifically zero so the text underneath it isn't as far */
 header h1{
     font-family:"Arial Bold", sans-serif;
     margin-bottom:0;
 }
+/*Making the font arial so it's easier to read, and the margin-top:0; specifically so it is snug against the title. */
 header p {
     font-family: "Arial";
     margin-top:0;
 }
+/*Giving the main a border, a background image, and making it a flex box in rows so it looks nice. */
 main{
     border: 2px solid black;
     background-image: url("../img/Paper.jpg");
@@ -37,15 +43,18 @@ main{
     flex-direction: row;
     align-items: stretch;
 }
+/*Making the headers a different text-style so they stand out, but also some back-up ones if they don't end up loading on another machine. */
 main h2{
     background:beige;
     font-family:"Londrina Sketch", Arial, sans-serif;
     margin-top:0;
     margin-bottom:0;
 }
+/*I wanted the main first section to take up most of the space.*/
 main section{
     flex-basis: 60%;
 }
+/*The left 2 px is so it's not right up against the side. */
 main section p{
     margin-top:0;
     margin-left:2px;
@@ -60,6 +69,7 @@ main aside img{
     margin: 0 auto;
     margin-bottom: 10px;
 }
+/*I wanted the footer to remain at the bottom no matter what, but still stay the same width as the flexboxed sections. */
 footer{
     border-left: 2px solid black;
     border-right: 2px solid black;
@@ -73,11 +83,13 @@ footer h2{
     margin:0;
     background: beige;
 }
+/*Getting rid of the bullets, as they look ugly and make it harder to remove the padding without it looking off. */
 footer ul{
     margin-top:0;
     list-style-type:none;
     padding: 2px;
 }
+/* Google font imports vv */
 .cabin-sketch-regular {
   font-family: "Cabin Sketch", sans-serif;
   font-weight: 400;
