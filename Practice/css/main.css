@@ -1,0 +1,58 @@
+@charset "UTF-8";
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing:inherit;
+}
+html, body{
+    min-height:100%;
+    margin:0;
+}
+body{
+    background-image: url("../img/Field.jpg");
+    background-size: cover;
+}
+ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+main{
+    width:80%;
+    margin: 0 auto;
+}
+.Main{
+    display:flex;
+}
+header{
+    background-color: rgb(247, 255, 178);
+    text-align:center;
+}
+h1{
+    margin:0;
+}
+section{
+    background-color:rgb(183, 200, 255);
+}
+aside{
+    background-color: white;
+}
+footer{
+    background-image: url("../img/Typing.jpg");
+    background-size:cover;
+    width:80%;
+    margin:0 auto;
+    text-align:center;
+}
+footer > h2{
+    margin:0;
+}
+img{
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+header, section, aside, footer{
+    border: black solid 1px;
+}
