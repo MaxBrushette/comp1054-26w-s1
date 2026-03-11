@@ -56,6 +56,13 @@ article:first-of-type img{
     margin-top:-108px;
     margin-right:-9px;
 }
+@media (max-width: 750px){
+    article:first-of-type img{
+        float:none;
+        width:100%;
+        margin: 0 0 10px 0;
+    }
+}
 article{
     flex: 0 0 40%;
     padding: 10px;
