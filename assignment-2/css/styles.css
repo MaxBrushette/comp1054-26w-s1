@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+/*v so that the box sizing is border-box and the entire html file has the same font, aside from the obvious exceptions specified for headers, etc. */
 html{
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
@@ -7,12 +7,13 @@ html{
 *, *::before, *::after{
     box-sizing:inherit;
 }
-
+/*The sizing for the container. I did the 80% I usually do because I needed room for the black borders that are seen in the magazine image */
 #container{
     width:80%;
     margin: 0 auto;
     padding: 20px;
 }
+/*Setting up the display flex, left and right borders, and the gap so the words aren't too close together. */
 main{
     display: flex;
     flex-wrap: wrap;
@@ -22,10 +23,12 @@ main{
     border-top:none;
     column-gap: 10%;
 }
+/*Giving the header the border so that the "homebase" text is within the border. Removing the bottom as for it to not appear. */
 header{
     border:1px solid black;
     border-bottom: none;
 }
+/*Making the text lowercase and changing the font to be more dramatic. Also editing the margins so that the border will touch right up against it. */
 header h1{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 100px;
@@ -35,10 +38,12 @@ header h1{
     margin-top:-10px;
     margin-left:-2px;
 }
+/*Making the 'em' element normal. I'm trying not to touch the html, and the original text on the magazine was not italicized, so I changed it back to normal and made specifically that part red. */
 header h1 em{
     color: rgb(224, 49, 49);
     font-style: normal;
 }
+/*This is so that the p element just below the header h1 goes above the 'homebase' text like in the image. This also transforms the text to be uppcase as also seen. */
 header p{
     position:absolute;
     margin-top:-109px;
@@ -48,11 +53,13 @@ header p{
 article h2{
     font-size: 40px;
 }
+/*The first article h2 was changed to red and the margin was taken off so the paragraph would be closer. */
 article:first-of-type h2{
     color: rgb(224, 49, 49);
     font-size:40px;
     margin-bottom:0;
 }
+/*I changed the first article img to be floating like in the magazine, and below are the media queries so that it doesn't start floating over text when in smaller size, as well as so that it doesn't get too big and start messing with the h2 for the first article. */
 article:first-of-type img{
     float:right;
     width:75%;
@@ -72,32 +79,41 @@ article:first-of-type img{
         width:60%;
     }
 }
+/*Sizing of the flex isn't exactly 50% as to make room for the gap. */
 article{
     flex: 0 0 40%;
     padding: 10px;
 }
+/*Makes the first article appear second in the flexbox order. */
 article:nth-of-type(1){
     order:0;
 }
+/*Removes the margin for the first article as to make the words closer to each other. */
 article:nth-of-type(1) p{
     margin:0;
 }
+/*Makes this the last item in the flexbox order. */
 article:nth-of-type(2){
     order:2;
 }
+/*Making the weight of the font skinnier so that it matches the magazine better. */
 article:nth-of-type(2) h2{
     font-weight:lighter;
 }
+/*This makes it so that the article imgs scale with the size of the screen. */
 article img{
     width: 100%;
     height: auto;
 }
+/*So that the highlighted text isn't yellow, but grey like in the magazine. */
 mark{
     background-color:lightgray;
 }
+/*Like previously, I made the sizing for the flex 40% to leave room for the gap. */
 aside{
     flex: 0 0 40%;
 }
+/*This makes it so that the first aside is the first in the order, as well as aligning the text to be centered instead of the default left, adding the black right border like in the magazine, and makes it so that it's not too close to the h1 or second aside. */
 aside:nth-of-type(1){
     order:-1;
     font-size: 1.5em;
@@ -106,24 +122,27 @@ aside:nth-of-type(1){
     margin-top:50px;
     margin-bottom:50px;
 }
+/*This makes the paragraph for the first aside skinnier, so it's not touching the left or right too closely, but also doesn't get too big even if the page is bigger. */
 aside:nth-of-type(1) p{
     max-width:250px;
     margin: 0 auto;
 }
+/*This media query removes the border-right if the text gets too close to the border, making the border merge with the words and making it harder to read. */
 @media(max-width: 900px){
     aside:nth-of-type(1){
         border-right:none;
     }
 }
+/*This makes the second aside's background light-grey like in the magazine, as well as making it the third item in the flex order. */
 aside:nth-of-type(2){
     background-color: lightgray;
     order:1;
     padding: 15px;
-    align-items:stretch;
 }
 aside h2{
     color: rgb(224, 49, 49);
 }
+/*This uses the ::before pseudo element to add the big + instead of having to edit the html for the  big + sign next to the h2 for the second aside. vertical-align: middle lets it align with the h2 better, and the display: inline-block lets the h1 get closer. */
 aside:nth-of-type(2) h2::before{
     content: "+ ";
     font-size:4em;
@@ -135,40 +154,49 @@ aside:nth-of-type(2) h2::before{
 aside:nth-of-type(2) h2{
     font-size:2em;
 }
+/*This makes it so the items in the list, as well as the paragraph, all have only a small margin between each other. */
 aside:nth-of-type(2) li h3, aside:nth-of-type(2) p{
     margin:5px;
 }
+/*This is so that directly in the second article that leads directly into a paragraph's position can be adjusted, which I did so to make it closer to the h2. */
 aside:nth-of-type(2) > p{
     position:relative;
     margin-top:-50px;
 }
+/*This media query is so that the margin is smaller between the h2 and the p because the text began to go inside of each other. */
 @media(max-width: 1400px){
     aside:nth-of-type(2) > p{
         margin-top:-20px;
     }
 }
+/*This changes the bullets for the list into a plus sign. */
 li::marker{
     content: "+ ";
     color: grey;
     font-size: 20px;
 }
+/*This makes the links black and bold like in the magazine, as well as removing the underline. */
 a{
     color: black;
     text-decoration: none;
     font-weight:bold;
 }
+/*Gives the footer a top border to close the main border. */
 footer{
     border-top: 1px solid black;
     word-spacing:0;
 }
+/*Makes the 18 a normal font as well as bolder, and also giving it a bit of distance between the other words in the footer. */
 footer p small em{
     font-weight:bolder;
     font-style: normal;
     margin-right:10px;
 }
+/*makes it lowercase like in the magazine. */
 footer p small{
     text-transform:lowercase;
 }
+/*Removes the ... underneath the abbreviation, as well as making it uppercase and bolder. */
 abbr[title]{
     font-size:smaller;
     text-transform:uppercase;
