@@ -28,7 +28,7 @@ header{
 }
 header h1{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 60px;
+    font-size: 100px;
     text-transform: lowercase;
     line-height:1;
     margin:0;
@@ -38,25 +38,26 @@ header h1 em{
     font-style: normal;
 }
 header p{
+    position:absolute;
+    margin-top:-120px;
     text-transform:uppercase;
     letter-spacing:2px;
-    margin-bottom:5px;
 }
 article h2{
     font-size: 40px;
 }
 article:first-of-type h2{
-    color: red;
+    color: rgb(224, 49, 49);
     font-size:40px;
     margin-bottom:0;
 }
 article:first-of-type img{
     float:right;
     width:75%;
-    margin-top:-108px;
-    margin-right:-9px;
+    margin-top:-109px;
+    margin-right:-50px;
 }
-@media (max-width: 750px){
+@media (max-width: 850px){
     article:first-of-type img{
         float:none;
         width:100%;
@@ -66,7 +67,7 @@ article:first-of-type img{
 @media(min-width:1500px){
     article:first-of-type img{
         float:right;
-        width:50%;
+        width:60%;
     }
 }
 article{
@@ -93,16 +94,39 @@ aside:nth-of-type(1){
     order:-1;
     font-size: 1.5em;
     text-align:center;
+    border-right: 1px solid black;
 }
 aside:nth-of-type(1) p{
     max-width:250px;
     margin: 0 auto;
+}
+@media(max-width: 900px){
+    aside:nth-of-type(1){
+        border-right:none;
+    }
 }
 aside:nth-of-type(2){
     background-color: lightgray;
     order:1;
     padding: 15px;
     align-items:stretch;
+}
+aside h2{
+    color: rgb(224, 49, 49);
+}
+aside:nth-of-type(2) h2::before{
+    content: "+ ";
+    font-size:4em;
+    font-weight:lighter;
+    color:black;
+    display:inline-block;
+    vertical-align:middle;
+}
+aside:nth-of-type(2) h2{
+    font-size:2em;
+}
+aside:nth-of-type(2) li h3, aside:nth-of-type(2) p{
+    margin:5px;
 }
 li::marker{
     content: "+ ";
@@ -121,8 +145,14 @@ footer{
 footer p small em{
     font-weight:bolder;
     font-style: normal;
+    margin-right:10px;
+}
+footer p small{
+    text-transform:lowercase;
 }
 abbr[title]{
+    font-size:smaller;
+    text-transform:uppercase;
     font-weight:bolder;
     text-decoration: none;
 }
