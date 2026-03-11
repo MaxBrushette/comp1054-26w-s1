@@ -52,7 +52,7 @@ article:first-of-type h2{
 }
 article:first-of-type img{
     float:right;
-    width:50%;
+    width:75%;
     margin-top:-108px;
     margin-right:-9px;
 }
@@ -61,6 +61,12 @@ article:first-of-type img{
         float:none;
         width:100%;
         margin: 0 0 10px 0;
+    }
+}
+@media(min-width:1500px){
+    article:first-of-type img{
+        float:right;
+        width:50%;
     }
 }
 article{
