@@ -32,6 +32,8 @@ header h1{
     text-transform: lowercase;
     line-height:1;
     margin:0;
+    margin-top:-10px;
+    margin-left:-2px;
 }
 header h1 em{
     color: rgb(224, 49, 49);
@@ -39,7 +41,7 @@ header h1 em{
 }
 header p{
     position:absolute;
-    margin-top:-120px;
+    margin-top:-109px;
     text-transform:uppercase;
     letter-spacing:2px;
 }
@@ -54,7 +56,7 @@ article:first-of-type h2{
 article:first-of-type img{
     float:right;
     width:75%;
-    margin-top:-109px;
+    margin-top:-99px;
     margin-right:-50px;
 }
 @media (max-width: 850px){
@@ -83,9 +85,15 @@ article:nth-of-type(1) p{
 article:nth-of-type(2){
     order:2;
 }
+article:nth-of-type(2) h2{
+    font-weight:lighter;
+}
 article img{
     width: 100%;
     height: auto;
+}
+mark{
+    background-color:lightgray;
 }
 aside{
     flex: 0 0 40%;
@@ -95,6 +103,8 @@ aside:nth-of-type(1){
     font-size: 1.5em;
     text-align:center;
     border-right: 1px solid black;
+    margin-top:50px;
+    margin-bottom:50px;
 }
 aside:nth-of-type(1) p{
     max-width:250px;
@@ -127,6 +137,15 @@ aside:nth-of-type(2) h2{
 }
 aside:nth-of-type(2) li h3, aside:nth-of-type(2) p{
     margin:5px;
+}
+aside:nth-of-type(2) > p{
+    position:relative;
+    margin-top:-50px;
+}
+@media(max-width: 1400px){
+    aside:nth-of-type(2) > p{
+        margin-top:-20px;
+    }
 }
 li::marker{
     content: "+ ";
