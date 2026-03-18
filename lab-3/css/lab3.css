@@ -16,24 +16,48 @@ html {
 	width: 80%;
 	margin: 0 auto;
 }
+/*Gets rid of the bullets, aligns it to the very left of the panel. */
 [role="tablist"]{
 	list-style-type:none;
-	text-align:center;
+	text-align:left;
+	padding-left:0;
 	margin-bottom:0;
 }
+/*Make it so that the tabs are beside each other instead of vertically stacked. */
 li[role="tab"]{
 	display:inline-block;
-	background-color:lightgrey;
-	border: 5px solid grey;
+}
+/*This adds a background and border to specifically the li a elements where the li's role is tab. */
+li[role="tab"] a{
+	padding:5px;
+	background: lightgrey;
+	border-radius: .5rem .5rem 0 0;
 	border-bottom: none;
 }
+/*With our javascript, the css can now take advantage of the added active class to the tabs, enabling me to add the background, border, and position that only affects the active tab. */
+[role="tab"].active a{
+	padding:5px;
+	background-color:white;
+	border: 5px solid black;
+	border-bottom:none;
+	position:relative;
+	top:-1.5px;
+	border-radius: .5rem .5rem 0 0;
+}
+/*This will make it so that if the panel has the active class, it will actually appear.*/
+[role="tabpanel"].active{
+	background: white;
+	display:inline-block;
+}
+/*Display: none; makes sure that the text inside doesn't appear, but it will keep the border and padding. */
+[role="tabpanel"]{
+	display:none;
+	border: 5px solid black;
+	padding: 0 1em;
+}
+/*removes the underline and changes the color of the anchors. */
 a{
 	text-decoration: none;
 	color:black;
 	font-weight:bold;
-}
-[role=tabpanel]{
-	background-color:lightblue;
-	border: 5px solid grey;
-	margin-top:0;
 }
