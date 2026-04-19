@@ -1,0 +1,122 @@
+@charset "UTF-8";
+/*
+ * [Modified] Modern CSS Reset
+ * @link https://github.com/hankchizljaw/modern-css-reset
+*/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  overflow-x: hidden;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Make images easier to work with */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body{
+    text-align: center;
+    background-image: url("../img/catpaws.svg");
+}
+h1{
+    font-size: 4rem;
+    font-family: Impact;
+    letter-spacing: 4px;
+}
+svg{
+    height: 20px;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav ul a{
+    display: inline-grid;
+    padding: 0.5rem;
+    margin: 2px;
+    text-decoration: none;
+}
+li > a[href="#about"]{
+    background-color:white;
+    border: solid orange;
+    border-radius: 15px;
+    color: brown;
+}
+li > a[href="#guidelines"]{
+    background-color: black;
+    border: solid yellow;
+    border-radius: 15px;
+    color: yellow;
+}
+li > a[href="#contribute"]{
+    background-color: white;
+    border: solid rgb(130, 130, 255);
+    border-radius: 15px;
+    color: rgb(130, 130, 255);
+}
+li > a[href="#files"]{
+    background-color: black;
+    border: solid white;
+    border-radius: 15px;
+    color:yellow;
+}
+li > a[href="/styles/"]{
+    background-color: white;
+    border: solid grey;
+    border-radius: 15px;
+    color: green;
+}
+li > a[href="/resources/"]{
+    background-color: brown;
+    border: solid rgb(77, 36, 20);
+    border-radius: 15px;
+    color: rgb(144, 255, 144);
+}
