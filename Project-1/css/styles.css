@@ -58,6 +58,7 @@ select {
     scroll-behavior: auto !important;
   }
 }
+/*Imported google font.*/
 .press-start-2p-regular {
   font-family: "Press Start 2P", system-ui;
   font-weight: 400;
@@ -72,6 +73,7 @@ body{
 h2, h3{
     font-family: "Press Start 2P", Arial, sans-serif;
 }
+/*Most of the headings and other parts use display: inline-block to make the background-colors and borders only surround the text content. */
 h1{
     display: inline-block;
     padding-left: 10px;
@@ -85,12 +87,14 @@ h1{
     filter: drop-shadow(rgb(255,128,149) 0px 5px 5px);
     /*https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/filter-function/drop-shadow*/
 }
+/*Targetting the div.container h2s to add a differently styled header. */
 div.container > h2{
     font-size: smaller;
     margin-top: 10px;
     background-color: rgb(255,128,149);
     color:rgb(139, 53, 67);
 }
+/*Emphasizing the paragraph below the h1. */
 header p{
     background-color: rgb(255,128,149);
     color:rgb(139, 53, 67);
@@ -100,9 +104,11 @@ header p{
 a{
     color:rgb(139, 54, 51);
 }
+/*To keep the svg out of the way*/
 svg{
     height:1rem;
 }
+/*These nav ul/ nav ul a selectors make it so that the navigation is flexible. */
 nav ul{
     display: flex;
     flex-wrap: wrap;
@@ -123,6 +129,7 @@ nav > ul > li > a{
     color: rgb(204,86,106);
     border: 2px solid rgb(255,128,149);
 }
+/*Only targetting the first and second h2s in the section element. */
 section:first-of-type > h2, section:nth-of-type(2) > h2{
     display: inline-block;
     margin-top: 0;
@@ -132,6 +139,7 @@ section:first-of-type > h2, section:nth-of-type(2) > h2{
     border: solid rgb(255, 128, 149);
     border-radius: 15px;
 }
+/*Media queries to adjust font sizing and element sizing for smaller devices. */
 @media(max-width: 400px){
     section:first-of-type > h2, section:nth-of-type(2) > h2{
         font-size:1em;
@@ -153,6 +161,7 @@ section:first-of-type > h2, section:nth-of-type(2) > h2{
 h3{
     color: rgb(204,86,106);
 }
+/*Making the sections look seperate from the bg and from each other. */
 section{
     width: 80%;
     display:inline-block;
@@ -185,12 +194,14 @@ section{
     padding:0;
     margin:0;
 }
+/*Targets the list of anchors to emphasize them in the footer. */
 .page-footer ul li{
     background-color:white;
-    margin: 5px 0;
+    margin: 5px;
     border: solid rgb(255,128, 149);
     border-radius:15px;
 }
+/*Removing the list style type from all of the unordered lists. */
 ul li{
     list-style-type:none;
 }
