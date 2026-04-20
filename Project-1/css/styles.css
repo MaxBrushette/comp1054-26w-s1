@@ -32,7 +32,7 @@ body {
   line-height: 1.5;
   text-rendering: optimizeSpeed;
   overflow-x: hidden;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Make images easier to work with */
@@ -61,11 +61,32 @@ select {
 body{
     text-align: center;
     background-image: url("../img/catpaws.svg");
+    /*https://www.freepik.com/free-vector/adorable-paw-print-pattern-background-perfect-kids-animal-lover-vector_79642632.htm#fromView=search&page=1&position=1&uuid=18d5b1f2-76e7-414a-aeba-25cb61ed1223&query=paws+background */
+
 }
 h1{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
     font-size: 4rem;
     font-family: Impact;
     letter-spacing: 4px;
+    color: rgb(204, 86, 106);
+    background: linear-gradient(rgb(255, 255, 255), rgb(255, 184, 184));
+    border-radius: 15px;
+    border: solid rgb(255, 128, 149);
+    filter: drop-shadow(rgb(255,128,149) 0px 5px 5px);
+    /*https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/filter-function/drop-shadow*/
+}
+div.container > h2{
+    font-size: smaller;
+    margin-top: 10px;
+    background-color: rgb(255,128,149);
+    color:rgb(139, 53, 67);
+}
+header > .container > p > a{
+    display: inline-block;
+    color: purple;
 }
 svg{
     height: 20px;
@@ -84,39 +105,25 @@ nav ul a{
     margin: 2px;
     text-decoration: none;
 }
-li > a[href="#about"]{
-    background-color:white;
-    border: solid orange;
+nav > ul > li > a{
+    background: linear-gradient(rgb(255,255,255), rgb(255,184,184));
     border-radius: 15px;
-    color: brown;
+    color: rgb(204,86,106);
+    border: 2px solid rgb(255,128,149);
 }
-li > a[href="#guidelines"]{
-    background-color: black;
-    border: solid yellow;
-    border-radius: 15px;
-    color: yellow;
-}
-li > a[href="#contribute"]{
+section:first-of-type > h2, section:nth-of-type(2) > h2{
+    display: inline-block;
+    margin-top: 0;
+    padding: 0 20px;
     background-color: white;
-    border: solid rgb(130, 130, 255);
+    border: solid rgb(255, 128, 149);
     border-radius: 15px;
-    color: rgb(130, 130, 255);
 }
-li > a[href="#files"]{
-    background-color: black;
-    border: solid white;
-    border-radius: 15px;
-    color:yellow;
-}
-li > a[href="/styles/"]{
-    background-color: white;
-    border: solid grey;
-    border-radius: 15px;
-    color: green;
-}
-li > a[href="/resources/"]{
-    background-color: brown;
-    border: solid rgb(77, 36, 20);
-    border-radius: 15px;
-    color: rgb(144, 255, 144);
+section{
+    width: 80%;
+    display:inline-block;
+    background: linear-gradient(white, rgb(255,184,184));
+    margin-bottom: 20px;
+    border: solid rgb(255,128,149);
+    border-radius:15px;
 }
