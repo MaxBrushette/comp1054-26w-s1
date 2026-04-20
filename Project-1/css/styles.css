@@ -58,19 +58,26 @@ select {
     scroll-behavior: auto !important;
   }
 }
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
 body{
     text-align: center;
     background-image: url("../img/catpaws.svg");
     /*https://www.freepik.com/free-vector/adorable-paw-print-pattern-background-perfect-kids-animal-lover-vector_79642632.htm#fromView=search&page=1&position=1&uuid=18d5b1f2-76e7-414a-aeba-25cb61ed1223&query=paws+background */
 
 }
+h2, h3{
+    font-family: "Press Start 2P", Arial, sans-serif;
+}
 h1{
     display: inline-block;
     padding-left: 10px;
     padding-right: 10px;
-    font-size: 4rem;
-    font-family: Impact;
-    letter-spacing: 4px;
+    font-size:2.5rem;
+    font-family: "Press Start 2P", Arial, sans-serif;
     color: rgb(204, 86, 106);
     background: linear-gradient(rgb(255, 255, 255), rgb(255, 184, 184));
     border-radius: 15px;
@@ -84,11 +91,17 @@ div.container > h2{
     background-color: rgb(255,128,149);
     color:rgb(139, 53, 67);
 }
+header p{
+    background-color: rgb(255,128,149);
+    color:rgb(139, 53, 67);
+    font-family: "Press Start 2P", Arial, sans-serif;
+    font-size: small;
+}
 a{
-    color:purple;
+    color:rgb(139, 54, 51);
 }
 svg{
-    height: 20px;
+    height:1rem;
 }
 nav ul{
     display: flex;
@@ -99,7 +112,7 @@ nav ul{
     list-style: none;
 }
 nav ul a{
-    display: inline-grid;
+    display: inline-block;
     padding: 0.5rem;
     margin: 2px;
     text-decoration: none;
@@ -115,8 +128,12 @@ section:first-of-type > h2, section:nth-of-type(2) > h2{
     margin-top: 0;
     padding: 0 20px;
     background-color: white;
+    color: rgb(204,86,106);
     border: solid rgb(255, 128, 149);
     border-radius: 15px;
+}
+h3{
+    color: rgb(204,86,106);
 }
 section{
     width: 80%;
@@ -131,7 +148,7 @@ section ul{
     margin:0;
 }
 section ul li{
-    display:inline-block;
+    display: inline-block;
     background-color: white;
     padding:5px;
     margin:2px;
@@ -141,4 +158,58 @@ section ul li{
 }
 section{
     padding:10px;
+}
+#files{
+    width:80%;
+    margin: 0 auto;
+}
+.page-footer ul{
+    padding:0;
+    margin:0;
+}
+.page-footer ul li{
+    background-color:white;
+    margin: 5px 0;
+    border: solid rgb(255,128, 149);
+    border-radius:15px;
+}
+ul li{
+    list-style-type:none;
+}
+.profile{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.profile ul{
+    padding:0;
+    margin:0;
+}
+.profile li, .profile > div > a{
+    margin:10px;
+    padding: 5px;
+    border: solid rgb(255,128, 149);
+    border-radius: 15px;
+    background-color:white;
+}
+.features{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.features li{
+    margin:10px;
+    padding:5px;
+    border: solid rgb(255,128, 149);
+    border-radius: 15px;
+    background-color:white;
+}
+footer{
+    padding: 10px;
+    border: solid rgb(255,128,149);
+    border-radius: 15px;
+    background: linear-gradient(rgb(255,255,255), rgb(255,184,184));
+}
+h4{
+    color: rgb(204,86,106);
 }
